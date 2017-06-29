@@ -15,4 +15,19 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+  
+  def copyright_generator
+    DevcampViewTool::Renderer.copyright 'Luke Davis', 'All rights reserved'
+  end
+
+
+end
+
+## Added this code to have the application work
+module DevcampViewTool
+  class Renderer
+    def self.copyright name, msg
+      "&copy; #{Time.now.year} | <b>#{name}</b> #{msg}".html_safe
+    end
+  end
 end
