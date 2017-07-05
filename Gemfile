@@ -59,4 +59,4 @@ gem 'devise', '~> 4.3'
 
 gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 
-gem 'devcamp_view_tool', git: 'https://github.com/lukedbasket/devcamp_view_tool'
+gem 'luke_view_tool', git: 'https://github.com/lukedbasket/devcamp_view_tool'

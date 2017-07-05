@@ -17,14 +17,14 @@ module ApplicationHelper
   end
   
   def copyright_generator
-    DevcampViewTool::Renderer.copyright 'Luke Davis', 'All rights reserved'
+    LukeViewTool::Renderer.copyright 'Luke Davis', 'All rights reserved'
   end
 
 
 end
 
 ## Added this code to have the application work
-module DevcampViewTool
+module LukeViewTool
   class Renderer
     def self.copyright name, msg
       "&copy; #{Time.now.year} | <b>#{name}</b> #{msg}".html_safe
