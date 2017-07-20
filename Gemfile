@@ -16,13 +16,11 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
-
   gem 'byebug', platform: :mri
   gem 'pry-byebug'
 end
 
 group :development do
-
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
@@ -45,3 +43,4 @@ gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 gem 'cocoon', '~> 1.2', '>= 1.2.10'
 gem 'gritter', '~> 1.2'
 gem 'twitter', '~> 6.1'
+gem 'redis', '~> 3.3', '>= 3.3.3'
